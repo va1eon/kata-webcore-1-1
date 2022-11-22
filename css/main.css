@@ -23,4 +23,106 @@
 
 .body {
   font-family: 'Barlow', sans-serif;
+  background-color: var(--color-bg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__banner {
+  padding: 45px 50px;
+  background: var(--color-primary) url("../img/bg.jpg") no-repeat center/cover;
+  width: 100%;
+}
+
+.register__logo {
+  display: inline-block;
+  width: 140px;
+}
+
+.register__logo-img {
+  width: 100%;
+}
+
+.register__content {
+  padding: 115px 70px;
+  width: 100%;
+  max-width: 680px;
+  background-color: var(--color-xlight);
+}
+
+.register__title {
+  margin: 0 0 15px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.register__subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-gray1);
+}
+
+.register__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__social-btn {
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 13px 52px;
+  width: 100%;
+  max-width: 247px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-xlight);
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: 20px;
+  transition: background-color .2s ease-in-out;
+}
+
+.register__social-btn:hover {
+  background-color: var(--color-primary);
+}
+
+.register__social-btn--fb {
+  background-color: var(--color-fb);
+  background-image: url("../img/facebook.svg");
+}
+
+.register__social-btn--in {
+  background-color: var(--color-in);
+  background-image: url("../img/linkedin.svg");
+  background-position: center left 15px;
 }
