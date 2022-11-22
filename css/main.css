@@ -1,0 +1,26 @@
+@import "fonts.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #efF6ff;
+  --color-text: #2a4a5c;
+  --color-fb: #255a9b;
+  --color-in: #0076b6;
+  --color-primary: #3698fb;
+  --color-gray1: #7b8a92;
+  --color-gray2: #96a5b1;
+  --color-gray3: #afafaf;
+  --color-light: #eeeeee;
+  --color-xlight: #ffffff;
+}
+
+.body {
+  font-family: 'Barlow', sans-serif;
+}
