@@ -163,6 +163,7 @@
 .register__form-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .register__form-input-label {
@@ -198,4 +199,178 @@
 
 .register__form-input:focus {
   border-left-color: var(--color-primary);
+}
+
+.register__form-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.register__form-subtitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.register__radio-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 150px;
+  padding: 0;
+  list-style: none;
+}
+
+.register__radio-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.register__radio-btn-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.register__radio-icon {
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-gray3);
+  border-radius: 50%;
+  transition: background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.register__radio-btn:checked + .register__radio-icon {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.register__radio-icon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: var(--color-xlight);
+  transition: transform .2s ease-in-out;
+}
+
+.register__radio-btn:checked + .register__radio-icon::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.tooltip {
+  position: relative;
+  display: block;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-gray3);
+  border-radius: 50%;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 1px;
+  background-color: var(--color-gray3);
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 1px;
+  background-color: var(--color-gray3);
+}
+
+.tooltip__text {
+  position: absolute;
+  top: 30px;
+  left: -100px;
+  padding: 15px;
+  width: 290px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-gray3);
+  background-color: var(--color-xlight);
+  box-shadow: 4px 4px 8px 2px rgba(238, 238, 238, .8);
+}
+
+.register__form-checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-gray3);
+  cursor: pointer;
+}
+
+.register__form-checkbox:checked + .register__form-checkbox-icon::before {
+  opacity: 1;
+}
+
+.register__form-checkbox-icon {
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-gray3);
+}
+
+.register__form-checkbox-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  transform: translate(-50%, -70%) rotate(-45deg);
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.register__form-checkbox-agree {
+  color: var(--color-primary);
+}
+
+.btn {
+  padding: 13px 20px;
+  min-width: 200px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-xlight);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-xlight);
+  color: var(--color-primary);
 }

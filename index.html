@@ -30,13 +30,55 @@
           <div class="register__form-info">
             <label class="register__form-input-label">
               <span class="register__form-input-name">Email</span>
-              <input class="register__form-input" type="email">
+              <input class="register__form-input" type="email" required>
             </label>
             <label class="register__form-input-label">
               <span class="register__form-input-name">Phone</span>
-              <input class="register__form-input" type="tel">
+              <input class="register__form-input" type="tel" required>
             </label>
           </div>
+          <h2 class="register__form-title">What type of investor are you?</h2>
+          <p class="register__form-subtitle">Select type of investor you are below.</p>
+          <ul class="register__radio-list">
+            <li class="register__radio-item">
+              <label class="register__radio-btn-label">
+                <input class="register__radio-btn visually-hidden" type="radio" name="type" checked>
+                <span class="register__radio-icon"></span>
+                Individual
+                <span class="tooltip" tabindex="0">
+                  <span class="tooltip__text">I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common</span>
+                </span>
+              </label>
+            </li>
+            <li class="register__radio-item">
+              <label class="register__radio-btn-label">
+                <input class="register__radio-btn visually-hidden" type="radio" name="type">
+                <span class="register__radio-icon"></span>
+                Business
+              </label>
+            </li>
+            <li class="register__radio-item">
+              <label class="register__radio-btn-label">
+                <input class="register__radio-btn visually-hidden" type="radio" name="type">
+                <span class="register__radio-icon"></span>
+                IRA
+              </label>
+            </li>
+            <li class="register__radio-item">
+              <label class="register__radio-btn-label">
+                <input class="register__radio-btn visually-hidden" type="radio" name="type">
+                <span class="register__radio-icon"></span>
+                Trust
+              </label>
+            </li>
+          </ul>
+          <label class="register__form-checkbox-label">
+            <input class="register__form-checkbox visually-hidden" type="checkbox" required>
+            <span class="register__form-checkbox-icon"></span>
+            I agree to the terms and receiving notification from iintoo
+            <a class="register__form-checkbox-agree" href="#" target="_blank">View full trems</a>
+          </label>
+          <button class="btn" type="submit">Create account</button>
         </form>
       </div>
     </div>
