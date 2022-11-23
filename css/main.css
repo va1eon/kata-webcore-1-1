@@ -94,11 +94,11 @@
 .register__social {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .register__social-btn {
   cursor: pointer;
-  margin-top: 50px;
   padding: 13px 52px;
   width: 100%;
   max-width: 247px;
@@ -110,6 +110,10 @@
   background-position: center left 10px;
   background-size: 20px;
   transition: background-color .2s ease-in-out;
+}
+
+.register__social-btn:not(:last-child) {
+  margin-right: 20px;
 }
 
 .register__social-btn:hover {
@@ -125,4 +129,73 @@
   background-color: var(--color-in);
   background-image: url("../img/linkedin.svg");
   background-position: center left 15px;
+}
+
+.register__or {
+  position: relative;
+  margin: 50px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-gray1);
+}
+
+.register__or::before,
+.register__or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 150px;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: var(--color-gray3);
+}
+
+.register__or::before {
+  left: 100px;
+}
+
+.register__or::after {
+  right: 100px;
+}
+
+.register__form-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__form-input-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 247px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray2);
+}
+
+.register__form-input-label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.register__form-input-name {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.register__form-input {
+  padding: 30px 10px 5px;
+  width: 100%;
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color .2s ease-in-out;
+}
+
+.register__form-input:focus {
+  border-left-color: var(--color-primary);
 }
