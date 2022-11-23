@@ -53,6 +53,7 @@
 .register {
   display: flex;
   justify-content: space-between;
+  box-shadow: 2px 2px 8px 10px rgba(123, 138, 146, .1);
 }
 
 .register__banner {
@@ -88,7 +89,7 @@
   margin: 0;
   font-size: 20px;
   font-weight: 400;
-  color: var(--color-gray1);
+  color: var(--color-text);
 }
 
 .register__social {
