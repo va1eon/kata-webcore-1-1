@@ -7,6 +7,7 @@
   <title>iintoo | Invest together</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="main.js" defer></script>
 </head>
 <body class="body">
 <h1 class="visually-hidden">iintoo - invest together</h1>
@@ -45,8 +46,11 @@
                 <input class="register__radio-btn visually-hidden" type="radio" name="type" checked>
                 <span class="register__radio-icon"></span>
                 Individual
-                <span class="tooltip" tabindex="0">
-                  <span class="tooltip__text">I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common</span>
+                <span class="tooltip tooltip--active" tabindex="0">
+                  <span class="tooltip__text">
+                    I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common
+                    <span class="tooltip__close">&times;</span>
+                  </span>
                 </span>
               </label>
             </li>
@@ -55,7 +59,12 @@
                 <input class="register__radio-btn visually-hidden" type="radio" name="type">
                 <span class="register__radio-icon"></span>
                 Business
-                <span class="tooltip" tabindex="0"></span>
+                <span class="tooltip" tabindex="0">
+                  <span class="tooltip__text">
+                    I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common
+                    <span class="tooltip__close">&times;</span>
+                  </span>
+                </span>
               </label>
             </li>
             <li class="register__radio-item">
@@ -63,7 +72,12 @@
                 <input class="register__radio-btn visually-hidden" type="radio" name="type">
                 <span class="register__radio-icon"></span>
                 IRA
-                <span class="tooltip" tabindex="0"></span>
+                <span class="tooltip" tabindex="0">
+                  <span class="tooltip__text">
+                    I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common
+                    <span class="tooltip__close">&times;</span>
+                  </span>
+                </span>
               </label>
             </li>
             <li class="register__radio-item">
@@ -71,17 +85,22 @@
                 <input class="register__radio-btn visually-hidden" type="radio" name="type">
                 <span class="register__radio-icon"></span>
                 Trust
-                <span class="tooltip" tabindex="0"></span>
+                <span class="tooltip" tabindex="0">
+                  <span class="tooltip__text">
+                    I am a natural person investing on my own behalf as a sole owner, join tenant, or tenant in common
+                    <span class="tooltip__close">&times;</span>
+                  </span>
+                </span>
               </label>
             </li>
           </ul>
           <label class="register__form-checkbox-label">
             <input class="register__form-checkbox visually-hidden" type="checkbox" required>
             <span class="register__form-checkbox-icon"></span>
-            <p class="register__form-checkbox-text">
+            <span class="register__form-checkbox-text">
               I agree to the terms and receiving notification from iintoo
               <a class="register__form-checkbox-agree" href="#" target="_blank">View full trems</a>
-            </p>
+            </span>
           </label>
           <div class="register__footer">
             <button class="btn" type="submit">Create account</button>

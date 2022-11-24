@@ -311,6 +311,21 @@
   color: var(--color-gray3);
   background-color: var(--color-xlight);
   box-shadow: 4px 4px 8px 2px rgba(238, 238, 238, .8);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip--active .tooltip__text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  font-size: 24px;
 }
 
 .register__form-checkbox-label {
@@ -321,6 +336,7 @@
 }
 
 .register__form-checkbox-text {
+  display: block;
   font-size: 16px;
   line-height: 1;
   color: var(--color-gray3);
@@ -457,11 +473,28 @@
     margin-bottom: 20px;
   }
 
+  .register__radio-btn-label {
+    display: inline-flex;
+  }
+
   .tooltip__text {
+    top: 0;
+    left: 30px;
     width: 200px;
   }
 
   .register__footer {
     text-align: center;
+  }
+
+  .tooltip__close {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .tooltip__text {
+    top: 0;
+    left: -80px;
   }
 }
